@@ -10,6 +10,7 @@ namespace IntroThreading
     {
         static void Main(string[] args)
         {
+            FindPiThread fp = new FindPiThread(1000);
         }
     }
 }

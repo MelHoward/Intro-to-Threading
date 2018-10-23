@@ -19,6 +19,11 @@ namespace IntroThreading
         int boardCount;
         Random rnd;
 
+        public FindPiThread(int nT)
+        {
+            numThrow = nT;
+
+        }
 
         public void ThrowDarts()
         {
