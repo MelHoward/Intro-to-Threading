@@ -10,7 +10,18 @@ namespace IntroThreading
     {
         static void Main(string[] args)
         {
-            FindPiThread fp = new FindPiThread(1000);
+            
+            Console.Write("Please enter number of darts to throw: ");
+            int toThrow = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Please enter number threads: ");
+            int numThreads = Convert.ToInt32(Console.ReadLine());
+
+            FindPiThread fp = new FindPiThread(toThrow);
+            int inCircle = fp.BoardCount;
+            Console.Write(inCircle);
+            
         }
+
+        
     }
 }
