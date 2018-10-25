@@ -30,9 +30,9 @@ namespace IntroThreading
         { 
             for (int i = 0; i < numThrow; i++)
             {
-                double x = rnd.Next(0, 1);
-                double y = rnd.Next(0, 1);
-                if(Math.Pow(x, 2) + Math.Pow(y, 2) <= 1)
+                double x = rnd.NextDouble();
+                double y = rnd.NextDouble();
+                if((Math.Pow(x, 2) + Math.Pow(y, 2)) <= 1)
                 {
                     boardCount += 1;
                 }
